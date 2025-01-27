@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Management - University Management System</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <header>
+        <h1>Faculty Management</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="student_enrollment.html">Student Enrollment</a></li>
+            <li><a href="faculty_management.html">Faculty Management</a></li>
+            <li><a href="course_schedules.html">Course Schedules</a></li>
+            <li><a href="examination_system.html">Examination System</a></li>
+            <li><a href="attendance_tracking.html">Attendance Tracking</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Add Faculty</h2>
+        <form id="facultyForm">
+            <label for="facultyName">Faculty Name:</label>
+            <input type="text" id="facultyName" name="facultyName" required>
+            <label for="department">Select Department:</label>
+            <select id="department" name="department" required>
+                <option value="cs">Computer Science</option>
+                <option value="ee">Electrical Engineering</option>
+            </select>
+            <label for="email">Faculty Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Faculty Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <button type="submit">Add Faculty</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 University Management System. All Rights Reserved.</p>
+    </footer>
+    <script src="script4.js"></script>
+</body>
+</html>

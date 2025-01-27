@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracking - University Management System</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://ik.imagekit.io/galgotia/landing_page/landing/lndWWyCEV.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 77, 128, 0.8); /* Semi-transparent for contrast */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent */
+            padding: 1em 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent for readability */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #004d80;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: rgba(0, 77, 128, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Styling for forms */
+        form {
+            margin-top: 20px;
+        }
+
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #004d80;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #00bcd4;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Attendance Tracking</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="student_enrollment.html">Student Enrollment</a></li>
+            <li><a href="faculty_management.html">Faculty Management</a></li>
+            <li><a href="course_schedules.html">Course Schedules</a></li>
+            <li><a href="examination_system.html">Examination System</a></li>
+            <li><a href="attendance_tracking.html">Attendance Tracking</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Track Student Attendance</h2>
+        <form>
+            <label for="student">Select Student:</label>
+            <select id="student" name="student" required>
+                <option value="student1">Student 1</option>
+                <option value="student2">Student 2</option>
+            </select>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="course1">Course 1</option>
+                <option value="course2">Course 2</option>
+            </select>
+            <label for="date">Attendance Date:</label>
+            <input type="date" id="date" name="date" required>
+            <button type="submit">Mark Attendance</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 University Management System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
